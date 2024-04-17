@@ -1,8 +1,11 @@
 from os import system
 system('pip install -r requirements.txt')
-from random import randint
-from PyQt5 import QtCore, QtGui, QtWidgets
-from openpyxl import Workbook
+try:
+    from random import randint
+    from PyQt5 import QtCore, QtGui, QtWidgets
+    from openpyxl import Workbook
+except ImportError:
+    system('pip install -r requirements.txt')
 
 users_xlsx = Workbook()
 users_xlsx_sheet = users_xlsx.active
