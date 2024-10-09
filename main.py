@@ -1,5 +1,5 @@
 from os import system
-system('pip install -r requirements.txt')
+
 try:
     from random import randint
     from PyQt5 import QtCore, QtGui, QtWidgets
@@ -44,7 +44,6 @@ def generator_password(letter_flag, number_flag, special_character_flag, length_
 
 class Ui_MainWindow(object):
     counter_row = 2
-
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setWindowIcon(QtGui.QIcon("icon.png"))
