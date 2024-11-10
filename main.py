@@ -1,5 +1,6 @@
 from os import system
-system('pip install -r requirements.txt')
+
+
 try:
     from random import randint
     from PyQt5 import QtCore, QtGui, QtWidgets
