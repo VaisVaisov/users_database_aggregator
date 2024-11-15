@@ -10,7 +10,7 @@ except ImportError:
 
 users_xlsx = Workbook()
 users_xlsx_sheet = users_xlsx.active
-users_xlsx_sheet.title = 'User'
+users_xlsx_sheet.title = 'Users'
 users_xlsx_sheet['A1'] = 'Username'
 users_xlsx_sheet['B1'] = 'Password'
 
