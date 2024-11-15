@@ -160,14 +160,11 @@ class Ui_MainWindow(object):
         self.apply_button.clicked.connect(lambda: self.apply_data())
 
     def save_data(self):
-        users_xlsx_sheet[f'A{self.counter_row}'] = str(self.login_field.text())
-        users_xlsx_sheet[f'B{self.counter_row}'] = str(self.password_field.text())
-        self.counter_row += 1
-        if len(self.filename_field.text()) > 0:
+        if len(self.filename_field.text()) > 0 and self.filename_field.text() != 'Filename is empty':
             users_xlsx.save(f'{self.filename_field.text()}.xlsx')
             exit()
         else:
-            pass
+            self.filename_field.setText('Filename is empty')
 
     def apply_data(self):
         users_xlsx_sheet[f'A{self.counter_row}'] = str(self.login_field.text())
