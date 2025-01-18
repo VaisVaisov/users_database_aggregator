@@ -140,7 +140,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Users Database Creator by Vais Vaisov"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Users Database Aggregator by Vais Vaisov"))
         self.apply_button.setText(_translate("MainWindow", "Apply"))
         self.password.setText(_translate("MainWindow", "Password"))
         self.login.setText(_translate("MainWindow", "Login"))
